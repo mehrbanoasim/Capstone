@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">">
+    <link rel="stylesheet" href="playstyle.css">
+    <title>Start Game</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+
+        header { 
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(199, 157, 199);
+}
+
+h1 { 
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 15px;        
+}
+
+section { 
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 202, 236);
+}
+
+.gamearea { 
+    width: 50%;
+    height: 400px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 157, 199);
+    align-items: center;
+    box-shadow: 0 8px 6px -6px black;
+} 
+
+h3 { text-align: center;
+    font-size: 1.5rem;
+}
+
+input { 
+    width: 40%;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: rgb(199, 157, 199);
+    color: black;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+}
+
+button { 
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: rgb(90, 65, 90);
+    text-decoration: none;
+    margin-top: 10px;
+    color: rgb(199, 157, 199);
+}
+
+button.btn { 
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background: white;
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier( 0.65, -0.25, 0.25, 1.95);
+} 
+
+button.btn:hover, button.btn:focus, button.btn:active { 
+    letter-spacing: 0.125rem; 
+    word-spacing: 0.2rem;
+}
+
+.hidden { 
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guess the Song</h1>
+    </header>
+
+    <section>
+        <div class="gameArea">
+            <h3 class="msg"></h3>
+            <input type="text" class="hidden">
+            <button class="btn">Click here to start</button>
+        </div>
+    </section>
+</body>
+</html>
